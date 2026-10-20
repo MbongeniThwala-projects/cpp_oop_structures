@@ -9,7 +9,7 @@ class stack{
         std::vector<T> data_;
 
     public:
-        void push(const T& x) {data_.push_back(x)}
+        void push(const T& x) { data_.push_back(x);}
 
         T pop(){
             if (data_.empty()) throw std::runtime_error("stack is empty");
@@ -23,7 +23,8 @@ class stack{
         return data_.back();
     }
 
-    bool empty() const{return data_.empty()}
-    std::size_t size() const{retrun data_.size()}
-    void clear(){data_.clear()}
+    bool empty() const{return data_.empty();}
+    std::size_t size() const{return data_.size();}
+    void clear(){data_.clear();}
+
 };
